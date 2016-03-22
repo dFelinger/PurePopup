@@ -1,5 +1,7 @@
 # PurePopup
 
+<p style="text-align:center">![Pure Popup](PurePopup.png)</p>
+
 ## Pure Vanilla JavaScript library with no dependences
 
 ---
@@ -17,7 +19,7 @@
 
 ## Include
 
-```
+``` html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,7 +53,7 @@ callback(result) | alert, confirm, prompt | function | null | Callback function 
 
 ## Full example
 
-```
+``` javascript
 document.getElementById('button').addEventListener('click', function(){
             
     PurePopup.prompt({
