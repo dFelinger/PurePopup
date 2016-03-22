@@ -1,6 +1,6 @@
 # PurePopup
 
-<p style="text-align:center">![Pure Popup](PurePopup.png)</p>
+![Pure Popup](https://raw.githubusercontent.com/dFelinger/PurePopup/master/PurePopup.png)
 
 ## Pure Vanilla JavaScript library with no dependences
 
@@ -24,11 +24,11 @@
 <html lang="en">
 <head>
     ...
-    <link rel="stylesheet" href="path/purePopup.min.css">
+    <link rel="stylesheet" href="path/purePopup.css">
 </head>
 <body>
     ...
-    <script src="path/purePopup.min.js"></script>
+    <script src="path/purePopup.js"></script>
 </body>
 </html> 
 ```
