@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PurePopup v1.0</title>
+    <link rel="stylesheet" href="purePopup.css">
+</head>
+<body>
+    <div id="button">Click me</div>
+    <script>
+        document.getElementById('button').addEventListener('click', function(){
+            
+            PurePopup.prompt({
+                title: 'Please, introduce yourself',
+                buttons: {
+                    okButton: 'Continue',
+                    cancelButton: 'Cancel'
+                },
+                inputs: {
+                    nameInput: 'Name:',
+                    emailInput: 'Email:'
+                }
+            }, function(result) {
+                
+                if (result.confirm == 'okButton') {
+
+                    PurePopup.alert({
+                        title: 'Nice to meet you, ' + result.nameInput + ' ' + result.emailInput
+                    });
+
+                } else if (result.confirm == 'cancelButton') {
+                    
+                    PurePopup.confirm({
+                        title: 'Do you really want to quit?',
+                        buttons: {
+                            yes: 'Yes, I do',
+                            no: 'No'
+                        },
+                    }, function(result) {
+
+                        if (result.confirm == 'yes') {
+
+                            PurePopup.alert({title: 'So, goodbye'});
+
+                        } else if (result.confirm == 'no') {
+
+                            PurePopup.alert({title: 'Thank you'});
+                            
+                        }
+                        
+                    });
+                    
+                } else if (result.confirm == 'noActionCancel') {
+                    // nothing to do
+                }
+                
+            });
+        });
+    </script>
+    <script src="purePopup.js"></script>
+</body>
+</html>
