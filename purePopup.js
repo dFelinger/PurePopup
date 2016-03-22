@@ -1,3 +1,7 @@
+/*
+ * PurePopup by dFelinger
+ * https://github.com/dFelinger/PurePopup
+ */ 
 ;(function() {
     'use strict';
     
